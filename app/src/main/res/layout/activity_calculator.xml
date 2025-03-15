@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Calculator"
+    android:background="#83D96E">
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="На главное меню"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:layout_gravity="start"/>
+
+<!--    <TextView
+        android:text="Кредитный калькулятор"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:paddingBottom="20dp"/>-->
+
+    <SeekBar
+        android:id="@+id/sliderCredit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="70000"
+        android:min="30000"/>
+
+    <EditText
+        android:id="@+id/etTerm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите срок кредита (в месяцах)"
+        android:inputType="number"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Рассчитать"
+        android:backgroundTint="@color/dark_green"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ежемесячный платёж: "
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:paddingTop="20dp"/>
+</LinearLayout>
